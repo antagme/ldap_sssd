@@ -42,6 +42,26 @@ ou: groups
 description: Container per usuaris del sistema linux
 objectclass: organizationalunit
 
+dn: cn=KerberosUsers1,ou=groups,dc=edt,dc=org
+objectClass: posixGroup
+cn: Usuaris de Kerberos 1
+gidNumber: 610
+memberUid: user01
+memberUid: user02
+memberUid: user03
+memberUid: user04
+memberUid: user05
+
+dn: cn=Ldapusers,ou=groups,dc=edt,dc=org
+objectClass: posixGroup
+cn: Usuaris de LDAP 1
+gidNumber: 611
+memberUid: user06
+memberUid: user07
+memberUid: user08
+memberUid: user09
+memberUid: user10
+
 dn: cn=Pau Pou,ou=usuaris,dc=edt,dc=org
 objectclass: posixAccount
 objectclass: inetOrgPerson
@@ -179,7 +199,7 @@ homephone: 555-222-0003
 mail: user03@edt.org
 description: alumne de 1asix
 ou: 1asix
-uid: user02
+uid: user03
 uidNumber: 7003
 gidNumber: 610
 homeDirectory: /var/tmp/home/1asix/user03
